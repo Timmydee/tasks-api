@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 
-# Now copy the code and compile TypeScript into dist/
+# Now copy the code and compile TypeScript into dist/ e
 COPY tsconfig.json ./
 COPY src ./src
 RUN npm run build
