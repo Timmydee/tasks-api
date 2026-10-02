@@ -125,6 +125,6 @@ async function start() {
 }
 
 start().catch((err) => {
-  console.error("Could not start:", err.message);
+  console.error("Could not start:", err);
   process.exit(1);
 });
